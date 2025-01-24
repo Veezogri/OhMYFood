@@ -1,0 +1,21 @@
+:root{
+
+    /* Couleur */
+    --main-color : #9356DC;
+    --second-color : #FF79DA;
+    --third-color : #FFD803;
+
+
+    /* Police */
+    --FontLogoTitle : Shrikhand ;
+    --FontText : Roboto ;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--FontText);
+}
+
+/* Header */

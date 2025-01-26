@@ -101,6 +101,8 @@ header .BoutonRestaurant{
     background: var(--main-color);
     color: white;
     font-size: 1rem;
+    position: relative;
+    left: -10px;
 }
 
 #Fonctionnement .Container ol {
@@ -123,6 +125,7 @@ header .BoutonRestaurant{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 380px;
+    position: relative;
 }
 
 #Fonctionnement .TextCheckBox {
@@ -185,11 +188,11 @@ header .BoutonRestaurant{
 }
 
 .CarteRestaurant .carte__title {
-    margin-bottom: 0; /* Supprime l'espace par défaut en bas du titre */
+    margin-bottom: 0; 
 }
 
 .CarteRestaurant .carte__subtitle {
-    margin-top: 0; /* Supprime l'espace par défaut en haut du sous-titre */
+    margin-top: 0; 
 }
 
 .card__badge{
@@ -273,6 +276,81 @@ header .BoutonRestaurant{
     padding-right: 10px;
 }
 
+
+/* Responsive design */ 
+
+
+
+
+
+/* Pour les mobiles */
+@media (max-width: 767px) {
+    #restaurants .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "Restaurant1"
+    "Restaurant2"
+    "Restaurant3"
+    "Restaurant4";
+    gap: 20px;
+    }
+
+    .CarteRestaurant{
+        width: 90%;
+        max-width: 400px;
+    }
+
+    /* Texte plus petit sur mobile */
+    h2, h3 {
+        font-size: 1.5rem;
+    }
+
+    #TexteSousTitre{
+        white-space: pre-line;
+
+    }
+
+    /* Marges réduites */
+    .Container, .Container2 {
+        padding: 10px;
+
+    }
+
+    /* Boutons adaptés aux mobiles */
+    header .BoutonRestaurant {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    /* Ajuster les tailles des cartes */
+    .CarteRestaurant img {
+        height: 100px; /* Réduit la taille des images */
+    }
+    
+
+    #Fonctionnement .Container ol {
+        flex-direction: column;
+        padding: 0; 
+        margin: 0;
+    }
+
+    #Fonctionnement .CheckBox {
+        width: 90%; 
+    }
+
+    #Fonctionnement h2{
+        margin-bottom: 10px;
+    }
+
+    #Fonctionnement .Container ol{
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    
+}
 
 
 

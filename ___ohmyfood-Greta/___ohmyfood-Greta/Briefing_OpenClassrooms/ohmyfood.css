@@ -64,35 +64,25 @@ header .BoutonRestaurant{
     background: linear-gradient(to bottom, var(--second-color), var(--main-color));
 }
 
+.Container{
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
 
 /* Fonctionnement */
 
-#Fonctionnement{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 50px 0;    
-}
+
 
 
 #Fonctionnement h2{
-    font-style: var(--FontLogoTitle);    
-    position: relative;
-    display: flex;
-    
-    
+    font-style: var(--FontLogoTitle);
+    text-align: left;
 }
 
-#Fonctionnement .Container{
-    display: block;
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-    gap: 20px;
-    width: 80%;
-    max-width: 600px;
 
-}
 #Fonctionnement .CheckBox::before {
     content: attr(data-step); /* Utilise l'attribut data-step pour afficher les chiffres */
     display: flex;
@@ -107,38 +97,61 @@ header .BoutonRestaurant{
 }
 
 #Fonctionnement .Container ol {
-    padding: 0;
-    margin: 0;
+    padding: 10px;
+    margin: 5px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 20px;
     
 }
 
 #Fonctionnement .CheckBox {
+    background-color: whitesmoke;
     display: flex;
     align-items: center;
-    margin-right: 5px;
+    margin: 0 auto;
     gap: 10px;
     border-radius: 10px;
     padding-right: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 380px;
+}
+
+#Fonctionnement .TextCheckBox {
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
 }
 
 
 /* Restaurants */
 
-#Restaurants{
+#restaurants{
     padding: 50px 20px;
 }
-#Restaurants .grid{
+
+#TitleBoxRestaurant{
+    display: flex;
+    text-align: left;
+}
+
+#restaurants .grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto;
     grid-template-areas: 
     "Restaurant1 Restaurant2"
     "Restaurant3 Restaurant4";
+    gap: 20px;
 
+}
+
+.CarteRestaurant .carte__footer {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .CarteRestaurant img {

@@ -72,6 +72,12 @@ header .BoutonRestaurant{
 }
 
 
+
+
+
+
+
+
 /* Fonctionnement */
 
 
@@ -147,20 +153,122 @@ header .BoutonRestaurant{
 
 }
 
+.CarteRestaurant{
+    position: relative;
+    background: white;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
 .CarteRestaurant .carte__footer {
-    padding: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
-.CarteRestaurant img {
+.CarteRestaurant a{
+    text-decoration: none;
+}
+
+.CarteRestaurant .carte__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: black;
+    gap: 5px;   
+
+    
+}
+
+.CarteRestaurant .carte__title {
+    margin-bottom: 0; /* Supprime l'espace par défaut en bas du titre */
+}
+
+.CarteRestaurant .carte__subtitle {
+    margin-top: 0; /* Supprime l'espace par défaut en haut du sous-titre */
+}
+
+.card__badge{
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    background-color: #50C878;
+    color: black;
+    padding: 2px;
+}
+
+.CarteRestaurant .Restaurant1 {
     height: 200px;
+    width: 100%;
     object-fit: cover;
-    border-radius: 15px 15px 0 0;
+}
+
+.CarteRestaurant .Restaurant2 {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.CarteRestaurant .Restaurant3 {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.CarteRestaurant .Restaurant4 {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.likebutton{
+    color: black;
 }
 
 
+/* Footer */
+#BasDePage{
+    background-color: #303030;
+    width: 100%;
+    padding: 20px 0;   
+
+}
+
+.Container2{
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+#TitleFooter{
+    display: flex;
+    color: white;
+    font-style: var(--FontLogoTitle);
+
+}
+
+.footer__list{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    text-align: left;
+    list-style: none;
+    gap: 5px;
+}
+
+#BasDePage ul li a {
+    text-decoration: none; 
+    color: white;  
+}
+
+#BasDePage ul li a i{
+    padding-right: 10px;
+}
 
 
 

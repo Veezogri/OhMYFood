@@ -11,13 +11,6 @@
     --FontText : Roboto ;
 }
 
-@keyframes wiggle {
-    0% { transform: rotate(0deg); }
-   80% { transform: rotate(0deg); }
-   85% { transform: rotate(5deg); }
-   95% { transform: rotate(-5deg); }
-  100% { transform: rotate(0deg); }
-}
 
 #footerlogo {
     filter: invert(100%) sepia(0%) saturate(7484%) hue-rotate(221deg) brightness(111%) contrast(103%);

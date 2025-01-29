@@ -39,6 +39,20 @@ img:hover{
     animation: bounce 0.3s ease-in-out;
 }
 
+/* animation entrée de page */ 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fadeIn 1s ease-in-out;
+}
+
 
 
 

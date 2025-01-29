@@ -38,6 +38,3 @@ titresection.forEach(hover => {
 
 
 
-
-
-

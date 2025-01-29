@@ -115,8 +115,8 @@ header .BoutonRestaurant{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 25px;
+    width: 25px;
+    height: 20px;
     border-radius: 50%;
     background: var(--main-color);
     color: white;
@@ -271,6 +271,8 @@ header .BoutonRestaurant{
     padding: 0 20px; 
 }
 
+
+
 #TitleFooter{
     display: flex;
     color: white;
@@ -316,6 +318,7 @@ header .BoutonRestaurant{
     "Restaurant3"
     "Restaurant4";
     gap: 20px;
+    justify-content: center;
     }
 
     .CarteRestaurant{
@@ -356,13 +359,15 @@ header .BoutonRestaurant{
         padding: 0; 
         margin: 0;
     }
-
+    
+    
     #Fonctionnement .CheckBox {
         width: 90%; 
     }
 
     #Fonctionnement h2{
         margin-bottom: 10px;
+        padding-left: 20px;
     }
 
     #Fonctionnement .Container ol{

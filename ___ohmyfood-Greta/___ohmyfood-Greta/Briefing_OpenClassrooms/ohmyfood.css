@@ -139,6 +139,7 @@ header .BoutonRestaurant{
 
 #restaurants{
     padding: 50px 20px;
+    background-color: whitesmoke;
 }
 
 #TitleBoxRestaurant{

@@ -252,7 +252,9 @@ header .BoutonRestaurant{
 .likebutton{
     color: black;
 }
-
+.card__like.filled {
+    color: rgb(159, 5, 5); /* Change la couleur en rouge lorsqu'il est liké */
+}
 
 
 

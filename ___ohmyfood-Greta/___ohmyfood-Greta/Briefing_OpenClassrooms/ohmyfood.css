@@ -252,9 +252,7 @@ header .BoutonRestaurant{
 .likebutton{
     color: black;
 }
-.card__like.filled {
-    color: rgb(159, 5, 5); /* Change la couleur en rouge lorsqu'il est liké */
-}
+
 
 
 
@@ -381,5 +379,15 @@ header .BoutonRestaurant{
 }
 
 
+/* Propriété CSS pour le JS */ 
+
+
+
+.TitreSection.ChangeColor {
+    color: #FF79DA;
+}
+.card__like.filled {
+    color: rgb(159, 5, 5); /* Change la couleur en rouge lorsqu'il est liké */
+}
 
 

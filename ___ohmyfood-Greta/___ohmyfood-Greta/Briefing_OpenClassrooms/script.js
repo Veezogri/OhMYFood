@@ -13,6 +13,30 @@
         });
     });
 
+const titresection = document.querySelectorAll('.TitreSection');
+
+
+titresection.forEach(hover => {
+    hover.addEventListener('mouseover', () => {
+        //alert("Survol détecté sur", hover.textContent);
+        hover.classList.add('ChangeColor');
+        console.log("Classe ajoutée :", hover.classList.contains('ChangeColor'), hover);
+        
+    });
+
+    hover.addEventListener('mouseleave', () => {
+        hover.classList.remove('ChangeColor');
+        
+    });
+
+});
+
+
+
+
+
+
+
 
 
 
